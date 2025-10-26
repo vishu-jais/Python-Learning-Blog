@@ -1,11 +1,16 @@
+# Program to count vowels and consonants
+
 text = input("Enter a string: ")
 
+# Define vowels
 vowels = "aeiouAEIOU"
+
+# Counters
 vowel_count = 0
 consonant_count = 0
 
 for char in text:
-    if char.isalpha():
+    if char.isalpha():  # Check if the character is a letter
         if char in vowels:
             vowel_count += 1
         else:
