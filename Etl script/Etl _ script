@@ -1,0 +1,20 @@
+import pandas as pd
+import sqlite3
+
+csv_file = "sample_data.csv"  
+df = pd.read_csv(csv_file)
+print("Original Data:")
+print(df)
+
+df = df.rename(columns={"Name": "FullName"})
+df = df[df["Age"] > 25]
+df["AgeGroup"] = df["Age"].apply(lambda x: "Adult" if x >= 18 else "Young")
+
+print("\nTransformed Data:")
+print(df)
+
+conn = sqlite3.connect("etl_output.db")  
+df.to_sql("people", conn, if_exists="replace", index=False)
+conn.close()
+
+print("\nData successfully loaded into 'etl_output.db' (table: people).")
