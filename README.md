@@ -1,44 +1,50 @@
-# Simple Calculator using Tkinter
+# QR Code Generator & Decoder
 
-A simple Python-based GUI calculator built with Tkinter that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.  
-This project demonstrates event-driven programming, GUI layout design, and exception handling in Python.
+A Python-based GUI application using Tkinter that allows users to generate and decode QR codes.  
+This project demonstrates GUI programming, file handling, and integration with QR code libraries in Python.
 
 ## Features
 
-- Perform basic arithmetic operations: addition, subtraction, multiplication, and division.  
-- Interactive and user-friendly graphical interface.  
-- Real-time display of inputs and results.  
-- “C” button to clear the display and start a new calculation.  
-- Handles invalid input safely with error messages.
+- Generate QR codes from text or URLs.  
+- Save QR codes as PNG image files.  
+- Decode existing QR codes from image files.  
+- Display generated QR codes within the GUI.  
+- Automatically copy decoded data to the clipboard.  
 
 ## Example
 
-Performing calculation:  
-`Input: 5 + 3 * 2`  
-`Output: 11`
+Generating a QR code:  
+`Input: https://example.com`  
+`Output: QR code image saved as default_qr.png`
+
+Decoding a QR code:  
+`Select QR code image file`  
+`Output: Decoded data displayed and copied to clipboard`
 
 ## Code Overview
 
 The program includes three main functions:
 
-1. **`press(key)`**  
-   Appends the pressed key (number or operator) to the current expression.
+1. **`generate_qr()`**  
+   Generates a QR code from user input and saves it as a PNG file. Displays it in the GUI.
 
-2. **`equal()`**  
-   Evaluates the expression entered by the user and displays the result.
+2. **`decode_qr()`**  
+   Allows the user to select a QR code image, decodes it, and shows the content in a message box. Copies content to clipboard.
 
-3. **`clear()`**  
-   Clears the calculator display.
+3. **`display_qr_image(filename)`**  
+   Loads and resizes the generated QR code image for display in the GUI.
 
 ## File Information
 
-- **File Name:** `SimpleCalculator.py`  
+- **File Name:** `QRCodeGeneratorDecoder.py`  
 - **Author:** Priyadharshni G  
 
 ## Concepts Used
 
 - Tkinter GUI design  
-- Event-driven programming  
-- Arithmetic operation handling  
-- Input validation and error management  
-- Grid layout management
+- QR code generation with `qrcode` library  
+- Image handling with `Pillow` (PIL)  
+- QR code decoding using `OpenCV`  
+- File handling and clipboard integration  
+
+
