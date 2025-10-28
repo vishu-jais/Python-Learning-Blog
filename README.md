@@ -1,41 +1,44 @@
-# Count Vowels and Consonants
+# Simple Calculator using Tkinter
 
-A simple Python program that counts the number of vowels and consonants in a user-provided string.  
-This project demonstrates basic string manipulation, conditional logic, and clean coding practices in Python.
+A simple Python-based GUI calculator built with Tkinter that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.  
+This project demonstrates event-driven programming, GUI layout design, and exception handling in Python.
 
 ## Features
 
-- Accepts any text input from the user.
-- Converts all characters to lowercase for uniform processing.
-- Ignores non-alphabetic characters (numbers, symbols, spaces, etc.).
-- Displays the count of vowels and consonants separately.
+- Perform basic arithmetic operations: addition, subtraction, multiplication, and division.  
+- Interactive and user-friendly graphical interface.  
+- Real-time display of inputs and results.  
+- “C” button to clear the display and start a new calculation.  
+- Handles invalid input safely with error messages.
 
 ## Example
 
-`Enter a string: Python Programming`  
-`Vowels: 4`  
-`Consonants: 13`
-
-
+Performing calculation:  
+`Input: 5 + 3 * 2`  
+`Output: 11`
 
 ## Code Overview
 
-The program includes two main functions:
+The program includes three main functions:
 
-1. **`count_vowels_consonants(text)`**:  
-   Handles the logic for counting vowels and consonants.
+1. **`press(key)`**  
+   Appends the pressed key (number or operator) to the current expression.
 
-2. **`main()`**:  
-   Manages user input and prints the result.
+2. **`equal()`**  
+   Evaluates the expression entered by the user and displays the result.
+
+3. **`clear()`**  
+   Clears the calculator display.
 
 ## File Information
 
-- **File Name:** `CountVowelsConsonants.py`
-- **Author:** Priyadharshni G
+- **File Name:** `SimpleCalculator.py`  
+- **Author:** Priyadharshni G  
 
 ## Concepts Used
 
-- String manipulation
-- Conditional statements
-- Function creation and reusability
-- Input/output handling
+- Tkinter GUI design  
+- Event-driven programming  
+- Arithmetic operation handling  
+- Input validation and error management  
+- Grid layout management
