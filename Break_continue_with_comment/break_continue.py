@@ -2,7 +2,7 @@
 print("Example 1: Using 'break'")
 for i in range(1, 11):  # Loop from 1 to 10
     if i == 6:
-        print("Number 6 found! Stopping the loop.")
+        print("Number 6 found!, Stopping the loop.")
         break  # Exit the loop when i = 6
     print("Current number:", i)
 
