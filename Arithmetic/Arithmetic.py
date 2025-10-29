@@ -18,5 +18,5 @@ print("Multiplication:",a*b)
 # Performing and displaying division
 print("Division:",a/b)
 
-# performing and displaying modulus(remainder)
+# performing and displaying modulus(remainders)
 print("Modulus:",a%b)
