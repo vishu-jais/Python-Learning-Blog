@@ -1,3 +1,5 @@
+#import section 
+
 import qrcode
 
 def create_qr(data, filename):
